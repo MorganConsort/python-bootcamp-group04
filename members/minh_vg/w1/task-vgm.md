@@ -178,9 +178,9 @@ def by_day(items: list[tuple[str, str]]) -> dict[str, list[str]]: ...
 
 ## Done when
 
-- [x] W1 issue created: [#4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4)
+- [x] W1 issue created and linked from [PR #5](https://github.com/MorganConsort/python-bootcamp-group04/pull/5): [issue #4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4)
 - [x] W1-1 to W1-5 complete in `members/minh_vg/w1/`
-- [ ] At least five meaningful commits pushed
+- [x] At least five meaningful commits pushed
 - [ ] PR `py-w1: MikaelVo639` merged, approved by the rotation reviewer
 - [ ] Ruff and pytest pass in CI
 - [ ] Teammate PR reviewed
