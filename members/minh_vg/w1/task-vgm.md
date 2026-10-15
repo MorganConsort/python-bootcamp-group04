@@ -178,7 +178,7 @@ def by_day(items: list[tuple[str, str]]) -> dict[str, list[str]]: ...
 
 ## Done when
 
-- [x] W1 issue created: [issue #4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4); replacement submission tracked in `PROGRESS.md`
+- [x] W1 issue created and linked from [replacement PR #7](https://github.com/MorganConsort/python-bootcamp-group04/pull/7): [issue #4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4)
 - [x] W1-1 to W1-5 complete in `members/minh_vg/w1/`
 - [x] At least five meaningful commits pushed
 - [ ] PR `py-w1: MikaelVo639` merged, approved by the rotation reviewer
@@ -206,6 +206,6 @@ creation and execution. Personal review and verification by Vo Gia Minh are
 still pending, so the combined disclosure/verification checkbox remains open.
 Submission evidence is tracked in the root `PROGRESS.md`. The accidental
 unreviewed merge of PR #5 was undone by revert PR #6. The replacement submission
-uses `codex/w1-MikaelVo639-review` and awaits teammate review. Keep it open until
+is PR #7 on `codex/w1-MikaelVo639-review` and awaits the requested teammate reviews. Keep it open until
 the required approval and CI conditions are met; local verification does not
 count as approval or CI. The original five exercise commits remain in history.

@@ -2,12 +2,17 @@
 
 | Week | Member | Issue | Submission PR | Status | Reviewer | Local verification | Estimated hours | Actual hours |
 |---|---|---|---|---|---|---|---|---|
-| 1 | MikaelVo639 (`minh_vg`) | [#4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4) | Replacement PR pending | Awaiting teammate review | Pending approval; rotation not documented | pytest: 31 tests and 1,543 subtests passed; Ruff lint and Python formatting passed | Pending member entry | Pending member entry |
+| 1 | MikaelVo639 (`minh_vg`) | [#4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4) | [#7](https://github.com/MorganConsort/python-bootcamp-group04/pull/7) | Awaiting teammate review | Five teammates requested; approval pending | pytest: 31 tests and 1,543 subtests passed; Ruff lint and Python formatting passed | Pending member entry | Pending member entry |
 
 The accidental unreviewed merge of [PR #5](https://github.com/MorganConsort/python-bootcamp-group04/pull/5)
 was undone by [revert PR #6](https://github.com/MorganConsort/python-bootcamp-group04/pull/6).
 The replacement submission must remain open until teammates review it and the
 course's merge requirements are met. No approval or completed submission is claimed.
+
+Reviews are requested from `MorganConsort`, `LePhanDucMan-pa`,
+`thinh-nguyen-007`, `tranquyetthang27`, and `hdang-207`. The assigned rotation
+reviewer is not documented in the repository; requested reviewers are not
+recorded as actual approvals.
 
 The implementation follows `members/minh_vg/w1/task-vgm.md`, including graph
 representation and DFS for W1-4. Instructor tests and a CI workflow are absent
