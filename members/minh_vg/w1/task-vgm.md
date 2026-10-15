@@ -15,11 +15,11 @@ All files below go in `python-bootcamp/members/minh_vg/w1/`. Do not edit another
 
 ## Deliverables checklist
 
-- [ ] `grades.py` (W1-1)
-- [ ] `text_tools.py` (W1-2)
-- [ ] `rules.py` (W1-3)
-- [ ] `translate.py` (W1-4, Graph representation and Depth First Search)
-- [ ] `timetable.py` (W1-5)
+- [x] `grades.py` (W1-1)
+- [x] `text_tools.py` (W1-2)
+- [x] `rules.py` (W1-3)
+- [x] `translate.py` (W1-4, Graph representation and Depth First Search)
+- [x] `timetable.py` (W1-5)
 
 ---
 
@@ -178,11 +178,32 @@ def by_day(items: list[tuple[str, str]]) -> dict[str, list[str]]: ...
 
 ## Done when
 
-- [ ] W1 issue created and linked from the PR
-- [ ] W1-1 to W1-5 complete in `members/minh_vg/w1/`
+- [x] W1 issue created: [#4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4)
+- [x] W1-1 to W1-5 complete in `members/minh_vg/w1/`
 - [ ] At least five meaningful commits pushed
 - [ ] PR `py-w1: MikaelVo639` merged, approved by the rotation reviewer
 - [ ] Ruff and pytest pass in CI
 - [ ] Teammate PR reviewed
 - [ ] `PROGRESS.md` row complete
 - [ ] AI assistance disclosed according to the course policy, and all code verified by you
+
+## Implementation notes
+
+All five coding exercises are implemented. The graph and DFS assignment above
+is the personal W1-4 specification; the README's generic variant table differs.
+
+Student tests are in `test_exercises.py`; no instructor tests were provided in
+this checkout. Run from the repository root with Python 3.10 or newer:
+
+```powershell
+python -m unittest discover -s members/minh_vg/w1 -p test_exercises.py -v
+python -m pytest -q members/minh_vg/w1/test_exercises.py
+ruff check members/minh_vg/w1
+```
+
+AI-use disclosure: OpenAI Codex assisted with implementation and local test
+creation and execution. Personal review and verification by Vo Gia Minh are
+still pending, so the combined disclosure/verification checkbox remains open.
+Submission evidence is tracked in the root `PROGRESS.md`. No reviewer is
+requested, per the author's instruction. Approval, CI, and merge are not
+claimed by the local verification results.
