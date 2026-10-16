@@ -175,8 +175,8 @@ def by_day(items: list[tuple[str, str]]) -> dict[str, list[str]]: ...
 - [x] W1 issue created and linked from the PR
 - [x] W1-1 to W1-5 complete in `members/dang_lh/w1/`
 - [x] At least five meaningful commits pushed
-- [ ] PR `py-w1: hdang-207` merged, approved by the rotation reviewer
+- [x] PR `py-w1: hdang-207` merged, approved by the rotation reviewer
 - [ ] Ruff and pytest pass in CI
 - [ ] Teammate PR reviewed
-- [ ] `PROGRESS.md` row complete
+- [x] `PROGRESS.md` row complete
 - [x] AI assistance disclosed according to the course policy, and all code verified by you
