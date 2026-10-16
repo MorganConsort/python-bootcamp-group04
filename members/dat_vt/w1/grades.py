@@ -9,6 +9,8 @@ set = {
 }
 
 def summary(scores):
+    if not scores:
+        raise ValueError
     Smin, Smax, mean  = 1000, 0, 0
     n = len(scores)//2
     median = (scores[n] + scores[n+1])/2
