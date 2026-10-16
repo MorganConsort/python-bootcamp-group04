@@ -15,11 +15,11 @@ All files below go in `python-bootcamp/members/thinh-nq/w1/`. Do not edit anothe
 
 ## Deliverables checklist
 
-- [ ] `grades.py` (W1-1)
-- [ ] `text_tools.py` (W1-2)
-- [ ] `rules.py` (W1-3)
-- [ ] `translate.py` (W1-4, Insertion sort (in place, return the sorted list))
-- [ ] `timetable.py` (W1-5)
+- [x] `grades.py` (W1-1)
+- [x] `text_tools.py` (W1-2)
+- [x] `rules.py` (W1-3)
+- [x] `translate.py` (W1-4, Insertion sort (in place, return the sorted list))
+- [x] `timetable.py` (W1-5)
 
 ---
 
@@ -166,11 +166,11 @@ def by_day(items: list[tuple[str, str]]) -> dict[str, list[str]]: ...
 
 ## Done when
 
-- [ ] W1 issue created and linked from the PR
-- [ ] W1-1 to W1-5 complete in `members/thinh-nq/w1/`
-- [ ] At least five meaningful commits pushed
-- [ ] PR `py-w1: thinh-nguyen-007` merged, approved by the rotation reviewer
-- [ ] Ruff and pytest pass in CI
+- [x] W1 issue created and linked from the PR
+- [x] W1-1 to W1-5 complete in `members/thinh-nq/w1/`
+- [x] At least five meaningful commits pushed
+- [x] PR `py-w1: thinh-nguyen-007` merged, approved by the rotation reviewer
+- [x] Ruff and pytest pass in CI
 - [ ] Teammate PR reviewed
-- [ ] `PROGRESS.md` row complete
-- [ ] AI assistance disclosed according to the course policy, and all code verified by you
+- [x] `PROGRESS.md` row complete
+- [x] AI assistance disclosed according to the course policy, and all code verified by you
