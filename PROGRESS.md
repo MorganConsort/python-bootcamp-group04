@@ -5,6 +5,7 @@
 | 1 | MikaelVo639 (`minh_vg`) | [#4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4) | [#5](https://github.com/MorganConsort/python-bootcamp-group04/pull/5) | Not requested, per author | pytest: 31 tests and 1,543 subtests passed; Ruff lint and Python formatting passed | Not supplied | Not supplied |
 | 1 | thinh-nguyen-007 (`thinh_nq`) | [#9](https://github.com/MorganConsort/python-bootcamp-group04/issues/9) | [#10](https://github.com/MorganConsort/python-bootcamp-group04/pull/10) | Team review | Local unit tests pass (all 5 modules verified); clean code | 2h | 2h |
 | 1 | hdang-207 (`dang_lh`) | [#13](https://github.com/MorganConsort/python-bootcamp-group04/issues/13) | [#14](https://github.com/MorganConsort/python-bootcamp-group04/pull/14) | MorganConsort | Manual and smoke tests passed (all 5 modules verified); clean code | 2h | 2h |
+| 1 | LePhanDucMan-pa (`man_lpd`) | [#2](https://github.com/MorganConsort/python-bootcamp-group04/issues/2) | [#3](https://github.com/MorganConsort/python-bootcamp-group04/pull/3) | MorganConsort | Binary-search examples passed locally; no instructor tests or CI workflow present | 4h | 4h |
 
 The implementation follows `members/minh_vg/w1/task-vgm.md`, including graph
 representation and DFS for W1-4. No instructor tests or CI workflow were present
@@ -23,3 +24,10 @@ Le Hong Dang implemented recursive merge sort for W1-4 following
 `members/dang_lh/w1/task-lhd.md`. All 5 modules verified locally.
 AI-use disclosure: Antigravity assisted with scaffolding and edge-case review.
 All code and logic verified by Le Hong Dang.
+
+Le Phan Duc Man implemented binary search for W1-4 following
+`members/man_lpd/task-lpdm.md`. Binary-search examples were verified locally.
+No instructor tests or CI workflow were present in the repository.
+
+AI-use disclosure: AI assistance was used for Git and GitHub workflow guidance.
+All submitted code was reviewed and verified by Le Phan Duc Man.
