@@ -28,8 +28,8 @@ def top_k(text_to_count, target_count):
         if my_dict["count"] == target_count:
             word_tuple = (my_dict["word"], my_dict["count"])
             result.append(word_tuple)
-            
-    print(result)
+    
+    print(sorted(result))
     
 if __name__ == "__main__":
     top_k(clean_text, integer)
