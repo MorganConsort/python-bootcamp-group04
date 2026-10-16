@@ -4,7 +4,7 @@
 |---|---|---|---|---|---|---|---|
 | 1 | MikaelVo639 (`minh_vg`) | [#4](https://github.com/MorganConsort/python-bootcamp-group04/issues/4) | [#5](https://github.com/MorganConsort/python-bootcamp-group04/pull/5) | Not requested, per author | pytest: 31 tests and 1,543 subtests passed; Ruff lint and Python formatting passed | Not supplied | Not supplied |
 | 1 | thinh-nguyen-007 (`thinh_nq`) | [#9](https://github.com/MorganConsort/python-bootcamp-group04/issues/9) | [#10](https://github.com/MorganConsort/python-bootcamp-group04/pull/10) | Team review | Local unit tests pass (all 5 modules verified); clean code | 2h | 2h |
-| 1 | hdang-207 (`dang_lh`) | [#13](https://github.com/MorganConsort/python-bootcamp-group04/issues/13) | [#1](https://github.com/MorganConsort/python-bootcamp-group04/pull/1) | MorganConsort | Manual and smoke tests passed (all 5 modules verified); clean code | 2h | 2h |
+| 1 | hdang-207 (`dang_lh`) | [#13](https://github.com/MorganConsort/python-bootcamp-group04/issues/13) | [#14](https://github.com/MorganConsort/python-bootcamp-group04/pull/14) | MorganConsort | Manual and smoke tests passed (all 5 modules verified); clean code | 2h | 2h |
 
 The implementation follows `members/minh_vg/w1/task-vgm.md`, including graph
 representation and DFS for W1-4. No instructor tests or CI workflow were present
