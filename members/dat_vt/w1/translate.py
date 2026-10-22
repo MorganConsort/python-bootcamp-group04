@@ -1,50 +1,28 @@
-### Requirements:       
+"""W1-4: Translate C++ to Python – Binary search.
 
-# # - Implement Euclid's algorithm yourself. Do not call `math.gcd`.      
-# # - `gcd(a, 0) == abs(a)` and `gcd(0, 0) == 0`.     
-# #- Negative inputs are allowed and the result is never negative.        
-# 3- Optional: in a `if __name__ == "__main__":` block, read two numbers with `input()` and print the result.     
-
-# ```python       
-# >>> gcd(48, 18)     
-# 6       
-# >>> gcd(-12, 18)        
-# 6       
-# >>> gcd(7, 0)       
-# 7       
-# ```     
-
-# C++ starting point:     
-
-# ```cpp      
-# int gcd(int a, int b) {     
-#     while (b != 0) {        
-#         int t = a % b;      
-#         a = b;      
-#         b = t;      
-#     }       
-#     return a;       
-# }       
-# ```     
-
-user_input = input("Please input 2 integers: ")
-integers = [int(x) for x in user_input.split(" ")]
-if len(integers) >= 3: 
-    print("You should only input 2 integers only!")
-    raise ValueError
-
-"""
 Difference from C++:
-Unlike C++, Python allow for multiple value assignment using the "," signs. 
-Moreover, Python does not allow the user the index the nested arguments.
-Also, Python does not need the programmer to initialize the type of variables
-And also, it does not require you to append a ";" at the end!
+Unlike C++, Python uses // for integer division instead of /.
+Python integers can be arbitrarily large, so there is no overflow concern
+with (low + high) // 2.
 """
-    
-def gcd(a: int, b: int): 
-    while b != 0:
-        a, b = b, a%b
-    return a
+
+
+def binary_search(a, key):
+    """Return the index of key in sorted list a, or -1 if not found."""
+    low, high = 0, len(a) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if a[mid] == key:
+            return mid
+        elif a[mid] < key:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1
+
 
 if __name__ == "__main__":
-    print("The GCD of", integers[0], "and", integers[1], "is:", gcd(integers[0], integers[1]))
+    user_input = input("Please input integers separated by spaces: ")
+    nums = [int(x) for x in user_input.split()]
+    target = int(input("Enter the target: "))
+    print(binary_search(nums, target))

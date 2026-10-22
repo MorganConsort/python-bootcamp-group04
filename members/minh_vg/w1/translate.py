@@ -1,17 +1,25 @@
-"""Represent graphs with adjacency lists and traverse them depth first.
+"""W1-4: Translate C++ to Python – In-place insertion sort.
 
-Unlike C++'s vector<vector<int>>, a Python dict supports node labels that
-need not be consecutive. A set replaces vector<bool> for visited nodes, and
-the traversal functions return their order instead of filling an output
-parameter. The iterative version avoids Python's recursion depth limit.
+Unlike C++'s std::vector<int>, a Python list supports dynamic resizing and
+does not require explicit memory management. The sort is performed in-place
+by shifting elements, identical to the C++ algorithm.
 """
 
 
-def build_graph(
-    edges: list[tuple[int, int]],
-    directed: bool = False,
-    nodes: list[int] | None = None,
-) -> dict[int, list[int]]:
+def insertion_sort(a):
+    """Sort a list of integers in-place using insertion sort and return it."""
+    for i in range(1, len(a)):
+        key = a[i]
+        j = i - 1
+        while j >= 0 and a[j] > key:
+            a[j + 1] = a[j]
+            j -= 1
+        a[j + 1] = key
+    return a
+
+
+# Keep the original graph traversal code for reference
+def build_graph(edges, directed=False, nodes=None):
     """Build sorted, duplicate-free adjacency lists, including isolated nodes."""
     neighbors = {node: set() for node in nodes or []}
     for source, target in edges:
@@ -22,7 +30,7 @@ def build_graph(
     return {node: sorted(adjacent) for node, adjacent in neighbors.items()}
 
 
-def dfs(graph: dict[int, list[int]], start: int) -> list[int]:
+def dfs(graph, start):
     """Recursively visit reachable nodes, visiting smaller neighbors first."""
     if start not in graph:
         raise ValueError("start must be a node in the graph")
@@ -30,7 +38,7 @@ def dfs(graph: dict[int, list[int]], start: int) -> list[int]:
     visited = set()
     order = []
 
-    def visit(node: int) -> None:
+    def visit(node):
         visited.add(node)
         order.append(node)
         for neighbor in sorted(graph.get(node, [])):
@@ -38,27 +46,4 @@ def dfs(graph: dict[int, list[int]], start: int) -> list[int]:
                 visit(neighbor)
 
     visit(start)
-    return order
-
-
-def dfs_iterative(graph: dict[int, list[int]], start: int) -> list[int]:
-    """Use an explicit stack to produce the same first-visit order as dfs."""
-    if start not in graph:
-        raise ValueError("start must be a node in the graph")
-
-    visited = set()
-    order = []
-    stack = [start]
-    while stack:
-        node = stack.pop()
-        if node in visited:
-            continue
-        visited.add(node)
-        order.append(node)
-        # Mark nodes on pop so a cross edge can still reach a pending node first.
-        stack.extend(
-            neighbor
-            for neighbor in sorted(graph.get(node, []), reverse=True)
-            if neighbor not in visited
-        )
     return order
