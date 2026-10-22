@@ -1,21 +1,26 @@
-user_input1 = input("Please enter your credits: ")
-user_input2 = input("Please enter your grades: ")
-credits = int(user_input1)
-GPA = float(user_input2)
- 
+"""W1-3: Thesis eligibility rules."""
 
 
-def can_register_thesis(credits: int, gpa: float):
-    if credits >= 120 and gpa >= 2.0: return True
-    else: return False
+def can_register_thesis(credits, gpa):
+    """Return True if credits >= 120 and gpa >= 2.0."""
+    return credits >= 120 and gpa >= 2.0
 
 
-def missing(credits: int, gpa: float): 
-    if(can_register_thesis(credits, gpa)): print("Can register thesis!")
-    else: 
-        if credits < 120: print("Need ", 120 - credits, " more credits")
-        else: 
-            if gpa < 2.0: print("Need ", 2.0 - gpa, " higher grades")
+def missing(credits, gpa):
+    """Return a list of human-readable reasons for unmet requirements."""
+    reasons = []
+    if credits < 120:
+        needed = 120 - credits
+        reasons.append(f"need {needed} more credits")
+    if gpa < 2.0:
+        reasons.append(f"need a GPA of at least 2.0")
+    return reasons
 
-if __name__ == "__main__": 
-    missing(credits, GPA)
+
+if __name__ == "__main__":
+    c = int(input("Please enter your credits: "))
+    g = float(input("Please enter your GPA: "))
+    if can_register_thesis(c, g):
+        print("Can register thesis!")
+    else:
+        print(missing(c, g))

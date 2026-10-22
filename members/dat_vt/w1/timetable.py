@@ -1,13 +1,23 @@
-course_days = [("Math", "Monday"), ("History", "Wednesday"), ("Physics", "Monday"), ("Art", "Wednesday")]
+"""W1-5: Group timetable by day."""
 
-result = {}
-# 1. Group the courses by day
-for course, day in course_days:
-    result.setdefault(day, []).append(course)
 
-# 2. Sort the course lists alphabetically
-for day in result:
-    result[day].sort()
+def by_day(items):
+    """Group courses by day and sort them alphabetically within each day."""
+    result = {}
+    for course, day in items:
+        result.setdefault(day, []).append(course)
 
-print(result)
-# Output: {'Monday': ['Math', 'Physics'], 'Wednesday': ['Art', 'History']}
+    for day in result:
+        result[day].sort()
+
+    return result
+
+
+if __name__ == "__main__":
+    course_days = [
+        ("Math", "Monday"),
+        ("History", "Wednesday"),
+        ("Physics", "Monday"),
+        ("Art", "Wednesday"),
+    ]
+    print(by_day(course_days))

@@ -1,26 +1,28 @@
-user_input = input("Please enter a list of numbers seperated by spaces: ")
-scores = [float(x) for x in user_input.split()]
+"""W1-1: Grade summary."""
 
-set = {
-    "min"
-    "max"
-    "mean"
-    "median"
-}
 
 def summary(scores):
+    """Compute min, max, mean, and median of a list of scores."""
     if not scores:
-        raise ValueError
-    Smin, Smax, mean  = 1000, 0, 0
-    n = len(scores)//2
-    median = (scores[n] + scores[n+1])/2
-    for i in scores:
-        Smin = min(Smin, i)
-        Smax = max(Smax, i)
-        mean += i
-    mean /= len(scores)
-    result = dict(min = Smin, max = Smax, mean = mean, median = median)
-    print(result)
+        raise ValueError("scores list cannot be empty")
+
+    n = len(scores)
+    sorted_scores = sorted(scores)
+
+    min_val = sorted_scores[0]
+    max_val = sorted_scores[-1]
+    mean_val = round(sum(scores) / n, 2)
+
+    mid = n // 2
+    if n % 2 == 1:
+        median_val = sorted_scores[mid]
+    else:
+        median_val = (sorted_scores[mid - 1] + sorted_scores[mid]) / 2
+
+    return {"min": min_val, "max": max_val, "mean": mean_val, "median": median_val}
+
 
 if __name__ == "__main__":
-    summary(scores)
+    user_input = input("Please enter a list of numbers separated by spaces: ")
+    scores = [float(x) for x in user_input.split()]
+    print(summary(scores))
