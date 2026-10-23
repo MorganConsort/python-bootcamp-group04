@@ -3,11 +3,11 @@
 import unittest
 from itertools import product
 
-from grades import summary
-from rules import can_register_thesis, missing
-from text_tools import top_k, word_count
-from timetable import by_day
-from translate import build_graph, dfs, dfs_iterative
+from members.minh_vg.w1.grades import summary
+from members.minh_vg.w1.rules import can_register_thesis, missing
+from members.minh_vg.w1.text_tools import top_k, word_count
+from members.minh_vg.w1.timetable import by_day
+from members.minh_vg.w1.translate import build_graph, dfs, dfs_iterative
 
 
 class GradeTests(unittest.TestCase):
@@ -153,9 +153,7 @@ class GraphTests(unittest.TestCase):
     def test_iterative_matches_recursive_on_all_three_node_graphs(self):
         possible_edges = list(product(range(3), repeat=2))
         for mask in range(1 << len(possible_edges)):
-            edges = [
-                edge for bit, edge in enumerate(possible_edges) if mask & (1 << bit)
-            ]
+            edges = [edge for bit, edge in enumerate(possible_edges) if mask & (1 << bit)]
             graph = build_graph(edges, directed=True, nodes=[0, 1, 2])
             for start in graph:
                 with self.subTest(mask=mask, start=start):
