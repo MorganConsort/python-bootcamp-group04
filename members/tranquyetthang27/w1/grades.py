@@ -1,4 +1,3 @@
-from typing import List
 
 
 def summary(scores: list[float]) -> dict:
