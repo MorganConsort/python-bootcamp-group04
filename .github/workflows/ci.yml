@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -m pip install -r requirements-dev.txt
+      - run: ruff check .
+
+  week1:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {member: dat_vt, variant: 1}
+          - {member: man_lpd, variant: 1}
+          - {member: thinh_nq, variant: 3}
+          - {member: tranquyetthang27, variant: 4}
+          - {member: dang_lh, variant: 1}
+          - {member: minh_vg, variant: 2}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q tests/test_w1.py --member ${{ matrix.member }} --variant ${{ matrix.variant }}
+
+  week2-minh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q tests/test_w2.py --member minh_vg
+
+  student-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q members/minh_vg/w1/test_exercises.py members/minh_vg/w2/tests_for_thang.py student_tests
