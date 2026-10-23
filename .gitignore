@@ -9,3 +9,4 @@ __pycache__/
 htmlcov/
 coverage.xml
 .pytest_tmp/
+

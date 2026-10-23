@@ -13,7 +13,7 @@ def missing(credits, gpa):
         needed = 120 - credits
         reasons.append(f"need {needed} more credits")
     if gpa < 2.0:
-        reasons.append(f"need a GPA of at least 2.0")
+        reasons.append("need a GPA of at least 2.0")
     return reasons
 
 
