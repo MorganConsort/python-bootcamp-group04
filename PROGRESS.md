@@ -46,6 +46,8 @@ Older rows below record preparation-time review requests, not current PR state.
 |---|---|---|
 | Minh (`minh_vg`) W2-1/2/3/5 | Implemented and locally tested | Dang (`hdang-207`); human review pending |
 | Minh W2-4 | Expanded tests: 26 passed, 1 failed because Thang lacks required `sieve(n)` API | Minh -> Thang; follow-up fix needed |
+| Thinh (`thinh_nq`) W2-1/2/3/5 | Implemented and locally tested | Thang (`tranquyetthang27`) |
+| Thinh W2-4 | Peer tests for binary search: 21 passed | Thinh -> Man |
 | Shared contract | Prepared with tests | All six must review; no approvals claimed |
 | Four shared modules | Prepared with tests and pipeline check | Owner allocation proposed in docs/week2-submission.md; confirmation pending |
 | Other members' individual W2 | Not completed by this change | Each owner supplies their own work |
@@ -53,6 +55,7 @@ Older rows below record preparation-time review requests, not current PR state.
 | Submission | Issue | PR | Assigned human review | Local result |
 |---|---|---|---|---|
 | Minh W2 | [#18](https://github.com/MorganConsort/python-bootcamp-group04/issues/18) | [#20](https://github.com/MorganConsort/python-bootcamp-group04/pull/20) | Dang (`hdang-207`), requested | W2 instructor: 3 passed; peer tests now expose missing Thang API (26 passed, 1 failed) |
+| Thinh W2 | [#39](https://github.com/MorganConsort/python-bootcamp-group04/issues/39) | [#40](https://github.com/MorganConsort/python-bootcamp-group04/pull/40) | Thang (`tranquyetthang27`), requested | W2 instructor: 3 passed; peer tests: 21 passed |
 | Shared contract | [#19](https://github.com/MorganConsort/python-bootcamp-group04/issues/19) | [#21](https://github.com/MorganConsort/python-bootcamp-group04/pull/21) | All five non-author members requested; author's self-review pending | Contract tests passed |
 | Parse | #19 | [#22](https://github.com/MorganConsort/python-bootcamp-group04/pull/22) | Man requested; proposed owner Dat | Parser tests passed |
 | Prioritise | #19 | [#23](https://github.com/MorganConsort/python-bootcamp-group04/pull/23) | Dang requested; proposed test owner Minh | Priority tests passed |
