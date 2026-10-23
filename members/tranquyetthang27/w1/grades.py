@@ -1,3 +1,6 @@
+from typing import List
+
+
 def summary(scores: list[float]) -> dict:
     if not scores:
         raise ValueError("Empty lish")
