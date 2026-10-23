@@ -1,6 +1,34 @@
 # Python bootcamp progress
 
-## Current Week 2 preparation (2026-10-23)
+## Current verified status (2026-10-23, main `6691dc3`)
+
+- PR #27 is merged into main; the shared contract, four modules and revised CI
+  are now present. The previous integration blocker is resolved.
+- Main CI [39958721013](https://github.com/MorganConsort/python-bootcamp-group04/actions/runs/39958721013)
+  is green. Local verification: 92 passed, 11 member-dependent skips, and
+  1,543 graph subtests passed; Ruff clean.
+- Explicit W1 checks: all six members pass 5 tests each. Explicit W2 checks:
+  Minh 3/3 and Dat 3/3 pass. CI is being extended to cover both existing W2
+  packages rather than Minh only.
+- Thang's required `sieve(n)` API is present. Minh's peer suite now passes
+  all 27 cases. Earlier missing-API and lint findings are resolved.
+- Dat's review of Minh in issues #28/#29 was checked against the original
+  test source at commit `0bce0dd`: 10/10 tests pass. The source was subsequently
+  removed by Dat in `98a0d8d`; summaries and broken main-branch file links in
+  the issues do not replace a runnable committed W2-4 test file.
+- Review rotation is still Dat -> Dang -> Minh -> Thang -> Thinh -> Man -> Dat.
+  Dat's extra review of Minh does not replace Dang's assigned review.
+- No reviews are recorded on #20/#27. Contract #21 has Dat's approval plus an
+  AI-assisted author-side comment; the remaining human reviews are pending.
+- Only Dat and Minh have individual W2 packages on main. Other members' W2
+  packages/peer-test evidence, actual student hours, and the weekly tag remain
+  incomplete. No human verification or approvals are fabricated.
+
+One additional Dat edge case was reproduced: effort 0.1 + 0.2 incorrectly
+fails against a 0.3-hour budget. Dat's code is unchanged; details and further
+handoff items are in `docs/repo-status-2026-10-23.md`.
+
+## Historical Week 2 preparation (superseded by status above)
 
 Latest follow-up: original PRs #20-26 are merged, but #21-26 targeted feature
 branches, so shared code and revised CI are still absent from main `7fa8fa2`.
