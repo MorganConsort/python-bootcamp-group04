@@ -2,6 +2,14 @@
 
 ## Current Week 2 preparation (2026-10-23)
 
+Latest follow-up: original PRs #20-26 are merged, but #21-26 targeted feature
+branches, so shared code and revised CI are still absent from main `7fa8fa2`.
+A follow-up branch `py/w2-followup-MikaelVo639` carries the surviving full stack
+to a PR targeting main. Minh's C413/I001 lint findings are fixed; isolated Ruff
+for his folder passes. See `docs/repo-audit-2026-10-23.md` and the AI-assisted
+contract check in `docs/reviews/2026-10-23-contract-check.md`.
+Older rows below record preparation-time review requests, not current PR state.
+
 | Member / task | Status | Reviewer / action |
 |---|---|---|
 | Minh (`minh_vg`) W2-1/2/3/5 | Implemented and locally tested | Dang (`hdang-207`); human review pending |

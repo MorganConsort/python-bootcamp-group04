@@ -5,8 +5,8 @@ Test Thang's W1-4 translation, including boundaries absent from instructor tests
 
 import pytest
 
-from members.tranquyetthang27.w1.translate import primes_up_to
 from members.tranquyetthang27.w1 import grades, rules, text_tools, timetable, translate
+from members.tranquyetthang27.w1.translate import primes_up_to
 
 
 def test_empty_range():
