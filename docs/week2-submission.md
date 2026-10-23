@@ -9,6 +9,19 @@ individual code remain unchanged, as explicitly requested.
 
 ## PR structure and human actions
 
+| PR | Branch | Base |
+|---|---|---|
+| [#20 Minh W2](https://github.com/MorganConsort/python-bootcamp-group04/pull/20) | `py/w2-MikaelVo639` | `main` |
+| [#21 contract](https://github.com/MorganConsort/python-bootcamp-group04/pull/21) | `py/tw2-contract` | `py/w2-MikaelVo639` |
+| [#22 parse](https://github.com/MorganConsort/python-bootcamp-group04/pull/22) | `py/tw2-parse` | `py/tw2-contract` |
+| [#23 prioritise](https://github.com/MorganConsort/python-bootcamp-group04/pull/23) | `py/tw2-prioritise` | `py/tw2-parse` |
+| [#24 allocate](https://github.com/MorganConsort/python-bootcamp-group04/pull/24) | `py/tw2-allocate` | `py/tw2-prioritise` |
+| [#25 render](https://github.com/MorganConsort/python-bootcamp-group04/pull/25) | `py/tw2-render` | `py/tw2-allocate` |
+| [#26 CI/README](https://github.com/MorganConsort/python-bootcamp-group04/pull/26) | `py/w2-ci-readme` | `py/tw2-render` |
+
+Tracking issues: [#18 individual](https://github.com/MorganConsort/python-bootcamp-group04/issues/18)
+and [#19 team](https://github.com/MorganConsort/python-bootcamp-group04/issues/19).
+
 Keep individual submission, shared contract, and each module in distinct PRs.
 Team PRs are stacked so the contract can be reviewed first. Merge from the
 bottom upward and retarget each next PR after its base merges. Preparation under
@@ -26,6 +39,12 @@ documented API variants. Student tests cover CSV failures, JSON dates,
 feasibility, package execution, peer sieve boundaries, prioritisation,
 fractional allocation, rendering, and composition. Targeted Ruff is clean.
 Bare pytest skips instructor checks without `--member`; explicit runs matter.
+
+Full local student run: 76 tests and 1,543 subtests passed; 11 instructor checks
+skip in bare pytest without a selected member. Explicit runs: six W1 runs of
+5 tests each pass; Minh W2 run of 3 tests passes. A fresh independent code review
+identified fractional budget equality; its regression was verified RED then
+GREEN after adding relative tolerance 1e-12 (zero absolute tolerance).
 
 Repository Ruff still fails on Dat's unfinished model, Dat's F541, and Thang's
 F401. The user declined edits to those files. Do not suppress the failures.

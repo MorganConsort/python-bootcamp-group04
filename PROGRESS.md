@@ -10,6 +10,16 @@
 | Four shared modules | Prepared with tests and pipeline check | Owner allocation proposed in README; confirmation pending |
 | Other members' individual W2 | Not completed by this change | Each owner supplies their own work |
 
+| Submission | Issue | PR | Assigned human review | Local result |
+|---|---|---|---|---|
+| Minh W2 | [#18](https://github.com/MorganConsort/python-bootcamp-group04/issues/18) | [#20](https://github.com/MorganConsort/python-bootcamp-group04/pull/20) | Dang (`hdang-207`), requested | W2 instructor: 3 passed; individual/peer tests passed |
+| Shared contract | [#19](https://github.com/MorganConsort/python-bootcamp-group04/issues/19) | [#21](https://github.com/MorganConsort/python-bootcamp-group04/pull/21) | All five non-author members requested; author's self-review pending | Contract tests passed |
+| Parse | #19 | [#22](https://github.com/MorganConsort/python-bootcamp-group04/pull/22) | Man requested; proposed owner Dat | Parser tests passed |
+| Prioritise | #19 | [#23](https://github.com/MorganConsort/python-bootcamp-group04/pull/23) | Dang requested; proposed test owner Minh | Priority tests passed |
+| Allocate | #19 | [#24](https://github.com/MorganConsort/python-bootcamp-group04/pull/24) | Thang requested | Allocation tests passed |
+| Render | #19 | [#25](https://github.com/MorganConsort/python-bootcamp-group04/pull/25) | Thinh requested | Rendering tests passed |
+| CI / README | #18, #19 | [#26](https://github.com/MorganConsort/python-bootcamp-group04/pull/26) | Dat requested | Full student run: 76 tests and 1,543 subtests passed; six W1 runs: 5 passed each |
+
 Full cycle (reviewer -> reviewee): Dat -> Dang -> Minh -> Thang -> Thinh -> Man -> Dat.
 Local execution is not evidence of human review, remote CI success, merge, or
 student hours. Estimated and actual hours were not supplied.
