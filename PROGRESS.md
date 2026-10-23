@@ -5,20 +5,26 @@
 | Member / task | Status | Reviewer / action |
 |---|---|---|
 | Minh (`minh_vg`) W2-1/2/3/5 | Implemented and locally tested | Dang (`hdang-207`); human review pending |
-| Minh W2-4 | Pytest tests for Thang's W1-4 sieve pass | Minh -> Thang |
+| Minh W2-4 | Expanded tests: 26 passed, 1 failed because Thang lacks required `sieve(n)` API | Minh -> Thang; follow-up fix needed |
 | Shared contract | Prepared with tests | All six must review; no approvals claimed |
 | Four shared modules | Prepared with tests and pipeline check | Owner allocation proposed in docs/week2-submission.md; confirmation pending |
 | Other members' individual W2 | Not completed by this change | Each owner supplies their own work |
 
 | Submission | Issue | PR | Assigned human review | Local result |
 |---|---|---|---|---|
-| Minh W2 | [#18](https://github.com/MorganConsort/python-bootcamp-group04/issues/18) | [#20](https://github.com/MorganConsort/python-bootcamp-group04/pull/20) | Dang (`hdang-207`), requested | W2 instructor: 3 passed; individual/peer tests passed |
+| Minh W2 | [#18](https://github.com/MorganConsort/python-bootcamp-group04/issues/18) | [#20](https://github.com/MorganConsort/python-bootcamp-group04/pull/20) | Dang (`hdang-207`), requested | W2 instructor: 3 passed; peer tests now expose missing Thang API (26 passed, 1 failed) |
 | Shared contract | [#19](https://github.com/MorganConsort/python-bootcamp-group04/issues/19) | [#21](https://github.com/MorganConsort/python-bootcamp-group04/pull/21) | All five non-author members requested; author's self-review pending | Contract tests passed |
 | Parse | #19 | [#22](https://github.com/MorganConsort/python-bootcamp-group04/pull/22) | Man requested; proposed owner Dat | Parser tests passed |
 | Prioritise | #19 | [#23](https://github.com/MorganConsort/python-bootcamp-group04/pull/23) | Dang requested; proposed test owner Minh | Priority tests passed |
 | Allocate | #19 | [#24](https://github.com/MorganConsort/python-bootcamp-group04/pull/24) | Thang requested | Allocation tests passed |
 | Render | #19 | [#25](https://github.com/MorganConsort/python-bootcamp-group04/pull/25) | Thinh requested | Rendering tests passed |
-| CI / README | #18, #19 | [#26](https://github.com/MorganConsort/python-bootcamp-group04/pull/26) | Dat requested | Full student run: 76 tests and 1,543 subtests passed; six W1 runs: 5 passed each |
+| CI / separate docs | #18, #19 | [#26](https://github.com/MorganConsort/python-bootcamp-group04/pull/26) | Dat requested | Expanded full run: 91 passed, 1 peer API test failed, 1,543 subtests passed; six W1 runs: 5 passed each |
+
+Follow-up Thang review: [posted on PR #8](https://github.com/MorganConsort/python-bootcamp-group04/pull/8#pullrequestreview-5625695435),
+with report in `docs/reviews/2026-10-23-thang-w1.md`. The new failing
+test enforces `sieve(n)` from Thang's personal task; generic instructor tests
+only exercise `primes_up_to(n)`. Thang's code and all README files remain
+unchanged. Earlier all-green student results predate the expanded API check.
 
 Full cycle (reviewer -> reviewee): Dat -> Dang -> Minh -> Thang -> Thinh -> Man -> Dat.
 Local execution is not evidence of human review, remote CI success, merge, or

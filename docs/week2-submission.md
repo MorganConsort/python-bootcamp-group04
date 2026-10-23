@@ -53,6 +53,13 @@ allow author approval, so record the author's self-review separately.
 
 ## Verification and blockers
 
+Updated after reviewing Thang's full personal W1 task: the expanded peer suite
+has **26 passed and 1 failed**, exposing the missing required `sieve(n)` API.
+The complete local run now has 91 passed, 1 failed, 11 member-dependent skips,
+and 1,543 subtests passed. Do not suppress the failing peer test; Thang must
+fix the API in a follow-up PR. See `docs/reviews/2026-10-23-thang-w1.md`.
+The earlier initial results below are retained as historical evidence.
+
 Minh's W2 instructor checks and all six W1 instructor runs pass with the
 documented API variants. Student tests cover CSV failures, JSON dates,
 feasibility, package execution, peer sieve boundaries, prioritisation,
