@@ -6,6 +6,11 @@ Minh's individual W2 package, but no shared contract/modules, development
 configuration, or revised CI. These changes survive in `py/tw2-contract` at
 `406f89c`; the follow-up branch carries them into a PR targeting main.
 
+Follow-up: [PR #27](https://github.com/MorganConsort/python-bootcamp-group04/pull/27),
+branch `py/w2-followup-MikaelVo639`, base `main`. All five non-author members
+are requested as reviewers. The AI-assisted author-side contract check was
+[posted on #21](https://github.com/MorganConsort/python-bootcamp-group04/pull/21#pullrequestreview-5626563088).
+
 ## Work performed for Minh
 
 - Fixed C413 in iterative DFS by using sorted(..., reverse=True).

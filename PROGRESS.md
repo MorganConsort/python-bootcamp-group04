@@ -5,7 +5,11 @@
 Latest follow-up: original PRs #20-26 are merged, but #21-26 targeted feature
 branches, so shared code and revised CI are still absent from main `7fa8fa2`.
 A follow-up branch `py/w2-followup-MikaelVo639` carries the surviving full stack
-to a PR targeting main. Minh's C413/I001 lint findings are fixed; isolated Ruff
+to [PR #27 targeting main](https://github.com/MorganConsort/python-bootcamp-group04/pull/27).
+All five non-author members are requested as reviewers. The AI-assisted
+author-side contract check is [recorded on #21](https://github.com/MorganConsort/python-bootcamp-group04/pull/21#pullrequestreview-5626563088);
+it is not student verification or approval.
+Minh's C413/I001 lint findings are fixed; isolated Ruff
 for his folder passes. See `docs/repo-audit-2026-10-23.md` and the AI-assisted
 contract check in `docs/reviews/2026-10-23-contract-check.md`.
 Older rows below record preparation-time review requests, not current PR state.
