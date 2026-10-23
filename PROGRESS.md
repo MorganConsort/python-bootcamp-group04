@@ -27,7 +27,7 @@ Older rows below record preparation-time review requests, not current PR state.
 | Submission | Issue | PR | Assigned human review | Local result |
 |---|---|---|---|---|
 | Minh W2 | [#18](https://github.com/MorganConsort/python-bootcamp-group04/issues/18) | [#20](https://github.com/MorganConsort/python-bootcamp-group04/pull/20) | Dang (`hdang-207`), requested | W2 instructor: 3 passed; peer tests now expose missing Thang API (26 passed, 1 failed) |
-| Thinh W2 | | | Thang (`tranquyetthang27`), requested | W2 instructor: 3 passed; peer tests: 21 passed |
+| Thinh W2 | [#39](https://github.com/MorganConsort/python-bootcamp-group04/issues/39) | [#40](https://github.com/MorganConsort/python-bootcamp-group04/pull/40) | Thang (`tranquyetthang27`), requested | W2 instructor: 3 passed; peer tests: 21 passed |
 | Shared contract | [#19](https://github.com/MorganConsort/python-bootcamp-group04/issues/19) | [#21](https://github.com/MorganConsort/python-bootcamp-group04/pull/21) | All five non-author members requested; author's self-review pending | Contract tests passed |
 | Parse | #19 | [#22](https://github.com/MorganConsort/python-bootcamp-group04/pull/22) | Man requested; proposed owner Dat | Parser tests passed |
 | Prioritise | #19 | [#23](https://github.com/MorganConsort/python-bootcamp-group04/pull/23) | Dang requested; proposed test owner Minh | Priority tests passed |
