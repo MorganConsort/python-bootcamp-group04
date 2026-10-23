@@ -47,3 +47,20 @@ def dfs(graph, start):
 
     visit(start)
     return order
+
+
+def dfs_iterative(graph, start):
+    """Match recursive DFS using a stack, without Python's recursion limit."""
+    if start not in graph:
+        raise ValueError("start must be a node in the graph")
+    visited = set()
+    order = []
+    stack = [start]
+    while stack:
+        node = stack.pop()
+        if node in visited:
+            continue
+        visited.add(node)
+        order.append(node)
+        stack.extend(sorted(graph.get(node, []), reverse=True))
+    return order

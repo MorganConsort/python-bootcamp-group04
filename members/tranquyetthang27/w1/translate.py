@@ -29,3 +29,7 @@ def sieve_of_Eratosthenes(n):
             for j in range(i * i, n + 1, i):
                 is_prime[j] = False
     return is_prime
+
+
+# Public alias required by task-tqt.md
+sieve = primes_up_to
