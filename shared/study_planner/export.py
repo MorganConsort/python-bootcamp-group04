@@ -1,7 +1,6 @@
 """Export a study plan (list of Blocks) to a JSON file."""
 
 import json
-from datetime import date
 from pathlib import Path
 
 from shared.contract import Block
