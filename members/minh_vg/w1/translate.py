@@ -62,5 +62,5 @@ def dfs_iterative(graph, start):
             continue
         visited.add(node)
         order.append(node)
-        stack.extend(reversed(sorted(graph.get(node, []))))
+        stack.extend(sorted(graph.get(node, []), reverse=True))
     return order
