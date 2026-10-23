@@ -10,7 +10,7 @@ def load_tasks(path: str) -> list[Task]:
     with open(path, mode="r", encoding="utf-8") as f:
         reader = csv.reader(f)
 
-        header = next(reader, None)
+        next(reader, None)
 
         for line_num, row in enumerate(reader, start=2):
             if not row:
