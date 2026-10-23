@@ -7,7 +7,7 @@
 | Minh (`minh_vg`) W2-1/2/3/5 | Implemented and locally tested | Dang (`hdang-207`); human review pending |
 | Minh W2-4 | Pytest tests for Thang's W1-4 sieve pass | Minh -> Thang |
 | Shared contract | Prepared with tests | All six must review; no approvals claimed |
-| Four shared modules | Prepared with tests and pipeline check | Owner allocation proposed in README; confirmation pending |
+| Four shared modules | Prepared with tests and pipeline check | Owner allocation proposed in docs/week2-submission.md; confirmation pending |
 | Other members' individual W2 | Not completed by this change | Each owner supplies their own work |
 
 | Submission | Issue | PR | Assigned human review | Local result |

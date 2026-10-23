@@ -1,7 +1,8 @@
 # Week 2 homework design
 
 Approved scope: Minh (`minh_vg`) individual W2-1 through W2-5, shared T-W2,
-CI fixes, README correction, and repair of Minh's existing Week 1 regression.
+CI fixes, separate submission notes, and repair of Minh's existing Week 1 regression.
+User clarification: read the existing README for context; do not edit it.
 Other members' individual implementations and instructor `tests/` stay untouched.
 The user explicitly declined repairs to other members' CI blockers.
 

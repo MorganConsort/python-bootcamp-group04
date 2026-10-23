@@ -1,7 +1,7 @@
 # Python Bootcamp: Evaluator Guide
 
 **Course:** CSC10014 team project, Computational Thinking lab
-**Repository:** [`MorganConsort/python-bootcamp-group04`](https://github.com/MorganConsort/python-bootcamp-group04)
+**Repository:** [`MorganConsort/assisant-group01`](https://github.com/MorganConsort/assisant-group01)
 **Audience:** the professor, TA, or any evaluator grading this repository
 
 This README is a preview for the person grading the work. It tells you who is on the team, where each piece of evidence lives, what a complete submission looks like, and how to check it quickly. Student setup and exercise instructions are in the bootcamp's own materials and are intentionally not repeated here.
@@ -18,12 +18,12 @@ This README is a preview for the person grading the work. It tells you who is on
 
 ## 2. Team roster
 
-| Member | GitHub username | Folder name | Roster number | Individual folder |
+| Member | GitHub username | Folder name | Variant | Individual folder |
 |:-:|---|---|:-:|---|
-| 1 | [`MorganConsort`](https://github.com/MorganConsort)  | `dat_vt` | 1 |`members/dat_vt/` |
+| 1 | [`MorganConsort`](https://github.com/MorganConsort)  | `dat_vt` | 1 |`members/dat_vt/`  `members/dang_lh/` |
 | 2 | [`LePhanDucMan-pa`](https://github.com/LePhanDucMan-pa) | `man_lpd` | 2 | `members/man_lpd/` |
-| 3 | [`thinh-nguyen-007`](https://github.com/thinh-nguyen-007) | `thinh_nq` | 3 | `members/thinh_nq/` |
-| 4 | [`tranquyetthang27`](https://github.com/tranquyetthang27) | `tranquyetthang27` | 4 | `members/tranquyetthang27/` |
+| 3 | [`thinh-nguyen-007`](https://github.com/thinh-nguyen-007) | `thinh_nq` | 3 | `members/thinh-nq/` |
+| 4 | [`tranquyetthang27`](https://github.com/tranquyetthang27) | `thanh_qt` | 4 | `members/thanh_qt/` |
 | 5 | [`hdang-207`](https://github.com/hdang-207) |  `dang_lh` | 5 |  `members/dang_lh/` |
 | 6 | [`MikaelVo639`](https://github.com/MikaelVo639) | `minh_vg` | 6 | `members/minh_vg/` |
 
@@ -36,74 +36,14 @@ This README is a preview for the person grading the work. It tells you who is on
 
 | Member | Weekly branch | PR title | Commit prefix |
 |:-:|---|---|---|
-| 1 | `py/wN-MorganConsort` | `py-wN: MorganConsort` | `feat(py-wN): ...` |
+| 1 | `py/wN-hdang-207` | `py-wN: hdang-207` | `feat(py-wN): ...` |
 | 2 | `py/wN-LePhanDucMan-pa` | `py-wN: LePhanDucMan-pa` | `feat(py-wN): ...` |
 | 3 | `py/wN-thinh-nguyen-007` | `py-wN: thinh-nguyen-007` | `feat(py-wN): ...` |
 | 4 | `py/wN-tranquyetthang27` | `py-wN: tranquyetthang27` | `feat(py-wN): ...` |
-| 5 | `py/wN-hdang-207` | `py-wN: hdang-207` | `feat(py-wN): ...` |
+| 5 | `py/wN-MorganConsort` | `py-wN: MorganConsort` | `feat(py-wN): ...` |
 | 6 | `py/wN-MikaelVo639` | `py-wN: MikaelVo639` | `feat(py-wN): ...` |
 
 Replace `N` with the week number. Later team weeks may use a topic suffix such as `py/w6-<username>-<topic>`.
-
-### Current Week 2 homework (Section 18.6, pages 61-62)
-
-The arrow means **reviewer -> reviewee**:
-**Dat -> Dang -> Minh -> Thang -> Thinh -> Man -> Dat**.
-
-| Reviewer | GitHub | Reviews | Reviewed by |
-|---|---|---|---|
-| Dat | MorganConsort | Dang | Man |
-| Dang | hdang-207 | Minh | Dat |
-| Minh | MikaelVo639 | Thang | Dang |
-| Thang | tranquyetthang27 | Thinh | Minh |
-| Thinh | thinh-nguyen-007 | Man | Thang |
-| Man | LePhanDucMan-pa | Dat | Thinh |
-
-Each member completes W2-1 `models.py`, W2-2 `io_utils.py`, W2-3 `errors.py`,
-W2-4 `tests_for_<reviewee>.py` (at least five pytest tests, including an extra
-edge case), and W2-5 `__init__.py`/`__main__.py` in their own `w2/` package.
-Minh's tests target Thang's W1-4 sieve in `members/tranquyetthang27/w1/`.
-The older `members/thang_qt/` folder is only a task placeholder.
-
-Minh's package runs from the root with Python 3.12 or newer:
-
-```text
-python -m members.minh_vg.w2
-python -m members.minh_vg.w2 samples/tasks.csv
-python -m pytest -q tests/test_w2.py --member minh_vg
-python -m pytest -q members/minh_vg/w2/tests_for_thang.py student_tests
-```
-
-The CSV header is `title,importance,effort_h,deadline`. Dates use `YYYY-MM-DD`,
-importance is 1-5, and effort is finite and nonnegative. Invalid rows report
-their line number. JSON uses ISO date strings.
-
-**T-W2:** all six members must review the PR adding `shared/contract.py` before
-module PRs merge. The author records a self-review because GitHub does not
-permit the author to approve their own PR. Each module needs its own PR/tests.
-Proposed six-member allocation for the team leader to confirm:
-
-| Module / function | Implementation owner | Test owner |
-|---|---|---|
-| `parse.py`: `parse_csv(path)` | Dat | Man |
-| `prioritise.py`: `prioritise(tasks, today)` | Dang | Minh |
-| `allocate.py`: `allocate(tasks, hours)` | Thang | Thang |
-| `render.py`: `render(blocks)` | Thinh | Thinh |
-
-Shared code is prepared as AI-assisted draft work under Minh's account; this
-table does not establish the named members' authorship. Owners must review and
-verify their task PRs. Priority uses importance divided by `max(1, days_left)`
-with stable ties. Greedy allocation preserves supplied order and allows a
-partial final task without mutating tasks. Empty plans render an explicit
-message. A shared CLI is T-W3 and is outside this assignment.
-
-CI runs lint, all six actual W1 member/variant combinations, Minh W2, and student
-tests in separate jobs. Other members add W2 CI jobs as their packages arrive.
-Instructor tests stay unchanged. Current **repository-wide lint blockers** are
-Dat's unfinished W2 model (line 17), Dat's W1 `rules.py` F541 (line 16), and
-Thang's W1 `text_tools.py` F401 (line 1). Their code remains untouched at the
-user's explicit request; do not suppress these checks or merge failing PRs.
-See [submission handoff](docs/week2-submission.md) and `PROGRESS.md` for status.
 
 ## 3. Repository map for the evaluator
 
@@ -128,7 +68,7 @@ python-bootcamp/
 
 For Week 1, each member folder should contain five files: `grades.py`, `text_tools.py`, `rules.py`, `translate.py`, and `timetable.py`. Later weeks follow the same pattern, one folder per week, with file names given by the instructor's tests.
 
-`translate.py` has generic instructor-test APIs below. Personal task files also assign Dat GCD, Man binary search, Thinh insertion sort, Thang sieve, Dang merge sort, and Minh graph/DFS. Passing an instructor variant alone does not certify those personal tasks:
+`translate.py` differs by variant, so check that each member implemented the right one:
 
 | Variant | Expected translation in `translate.py` |
 |:-:|---|
@@ -200,11 +140,11 @@ Copy one block per week, or print and fill by hand. Tick, score, or write the nu
 
 | Member | Issue # | PR # | Reviewer (actual) | Reviewer correct? | Merged and CI green? | Files present | Variant correct | Tests pass | Ruff clean | ≥ 5 commits | Review given | `PROGRESS.md` row | Integrity OK | Score | Notes |
 |:-:|---|---|---|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|---|---|
-| 1 `MorganConsort` | | | | | | | | | | | | | | | |
+| 1 `hdang-207` | | | | | | | | | | | | | | | |
 | 2 `LePhanDucMan-pa` | | | | | | | | | | | | | | | |
 | 3 `thinh-nguyen-007` | | | | | | | | | | | | | | | |
 | 4 `tranquyetthang27` | | | | | | | | | | | | | | | |
-| 5 `hdang-207` | | | | | | | | | | | | | | | |
+| 5 `MorganConsort` | | | | | | | | | | | | | | | |
 | 6 `MikaelVo639` | | | | | | | | | | | | | | | |
 
 ### Team sheet
@@ -241,25 +181,27 @@ Run from the repository root.
 **Re-run the tests for one member**
 
 ```bash
-pytest -q tests/test_w1.py --member dang_lh --variant 1
-pytest -q tests/test_w1.py --member man_lpd --variant 1
-pytest -q tests/test_w1.py --member thinh_nq --variant 3
-pytest -q tests/test_w1.py --member tranquyetthang27 --variant 4
-pytest -q tests/test_w1.py --member dat_vt --variant 1
-pytest -q tests/test_w1.py --member minh_vg --variant 2
-ruff check .
+pytest -q python-bootcamp/tests/test_w1.py --member dang_lh --variant 1
+pytest -q python-bootcamp/tests/test_w1.py --member man_lpd --variant 2
+pytest -q python-bootcamp/tests/test_w1.py --member thinh-nq --variant 3
+pytest -q python-bootcamp/tests/test_w1.py --member thanh_qt --variant 4
+pytest -q python-bootcamp/tests/test_w1.py --member dat_vt --variant 1
+pytest -q python-bootcamp/tests/test_w1.py --member minh_vg --variant 2
+ruff check python-bootcamp
 ```
 
-Use these variant values for the actual instructor APIs, not roster numbers. Personal W1-4 tasks also require their own tests. Run Week 2 explicitly with `python -m pytest -q tests/test_w2.py --member minh_vg`. Bare pytest skips instructor checks without `--member`.
+Change `test_w1.py` to the week you are grading. Variants for members 5 and 6 follow the roster note above.
 
 **Setup for the evaluator (once)**
 
 ```bash
-git clone git@github.com:MorganConsort/python-bootcamp-group04.git
-cd python-bootcamp-group04
+git clone git@github.com:MorganConsort/assisant-group01.git
+cd assisant-group01
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\Activate.ps1
-python -m pip install -r requirements-dev.txt
+pip install -r requirements.txt
+pip install -e .
+pip install pytest ruff
 ```
 
 **Pull requests and reviews**
@@ -282,8 +224,8 @@ git log --first-parent --format="%h %an %s" main     # direct commits to main sh
 **Instructor tests untouched**
 
 ```bash
-git log --oneline -- tests
-git diff <previous_tag> py-w1-done -- tests
+git log --oneline -- python-bootcamp/tests
+git diff <previous_tag> py-w1-done -- python-bootcamp/tests
 ```
 
 **Secrets and generated files**
@@ -313,9 +255,9 @@ git ls-tree -r --name-only py-w1-done | grep -E "(^|/)(\.venv|__pycache__|\.env$
 
 | What you might see | Likely explanation |
 |---|---|
-| Folder aliases differ in older task files | Use the actual folders listed in the roster, particularly `thinh_nq` and `tranquyetthang27` |
+| Member 3's folder has a hyphen (`thinh-nq`) | It was created that way. Use `--member thinh-nq` exactly |
 | A folder name does not obviously match the GitHub username | Folder names are chosen by the team (for example `dat_vt` for `MorganConsort`). Use the roster above |
-| Instructor variants differ from personal assignments | Variants select an API, not a roster position. Dang also has merge sort and Minh also has graph/DFS; test those separately |
+| Members 5 and 6 appear to use variants 1 and 2 | Only four variants exist, so they wrap around (confirm with the instructor) |
 | `PROGRESS.md` is updated in a separate small PR | Allowed. It may be submitted with the homework PR or as a follow-up |
 | Repository settings changes by one account | The repository owner configures branch protection and CI |
 | Pytest cannot find the member | The command was not run from the repository root, or `--member` does not exactly match the folder |
