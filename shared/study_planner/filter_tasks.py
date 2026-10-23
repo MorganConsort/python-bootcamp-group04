@@ -1,7 +1,6 @@
 """Filter tasks by deadline range or minimum importance."""
 
-import json
-from pathlib import Path
+from datetime import date
 from shared.contract import Task
 
 
