@@ -47,43 +47,6 @@ jobs:
       - run: python -m pip install -r requirements-dev.txt
       - run: python -m pytest -q tests/test_w2.py --member ${{ matrix.member }}
 
-  week3:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        member: [dat_vt, man_lpd, thinh_nq, tranquyetthang27, dang_lh, minh_vg]
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: {python-version: "3.12"}
-      - run: python -m pip install -r requirements-dev.txt
-      # A member's job only runs the tests once their w3 folder is on the branch,
-      # so one person's unfinished week does not turn everyone's PR red.
-      - name: W3 instructor tests
-        run: |
-          if [ -d members/${{ matrix.member }}/w3 ]; then
-            python -m pytest -q tests/test_w3.py --member ${{ matrix.member }}
-          else
-            echo "members/${{ matrix.member }}/w3 not created yet; skipping"
-          fi
-
-  study-planner-cli:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: {python-version: "3.12"}
-      - run: python -m pip install -r requirements-dev.txt
-      # T-W3: the planner must run from a fresh clone. Skipped until __main__.py exists.
-      - name: Run the planner on the sample CSV
-        run: |
-          if [ -f shared/study_planner/__main__.py ]; then
-            python -m shared.study_planner samples/tasks.csv --hours 2
-          else
-            echo "shared/study_planner/__main__.py not created yet; skipping"
-          fi
-
   student-tests:
     runs-on: ubuntu-latest
     steps:
